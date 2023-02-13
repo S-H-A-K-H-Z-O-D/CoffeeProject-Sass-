@@ -1,0 +1,27 @@
+.cards{
+    display: flex;
+    margin-top: 200px;
+    position: relative;
+
+    &__underWord{
+        position: absolute;
+        top: -110px;
+        font-size: 170px;
+        font-family: fraunces;
+        background: linear-gradient(180deg, rgb(164, 164, 164), #FEFCF7 );
+        z-index: -1;
+        -webkit-text-fill-color: transparent;
+        -webkit-background-clip: text;
+    }
+
+    &__card{
+        padding: 0 30px;
+        text-align: center;
+        line-height: 25px;
+        color: #333D4B;
+
+        & >h3{
+            font-family: fraunces;
+        }
+    }
+}

@@ -1,0 +1,80 @@
+.section2{
+    position: relative;
+    text-align: center;
+    background-color: #2C343E;
+    margin-bottom: 200px;
+    padding-bottom: 230px;
+    border-radius: 10px;
+    margin-top: 100px;
+
+    & >h2{
+        color: white;
+        padding-top: 70px;
+    }
+
+    & >p{
+        color: white;
+        padding: 15px 360px;
+        line-height: 25px;
+    }
+
+    &__cards{
+        display: flex;
+        justify-content: center;
+        position: absolute;
+        bottom: -165px;
+        left: 60px;
+
+        &__card{
+            background-color: #0E8784;
+            width: 250px;
+            margin: 0 15px;
+            padding: 30px 50px;
+            border-radius: 5px;
+            color: white;
+            padding-top: 150px;
+        }
+
+        &__cardContent1{
+            position: relative;
+
+            &::before{
+                content: "";
+                background: url(/img/coffee-bean.png) no-repeat;
+                width: 75px;
+                height: 75px;
+                position: absolute;
+                top: 50px;
+                left: 140px;
+            }
+        }
+
+        &__cardContent2{
+            position: relative;
+
+            &::before{
+                content: "";
+                background: url(/img/present-box.png) no-repeat;
+                width: 75px;
+                height: 75px;
+                position: absolute;
+                top: 50px;
+                left: 140px;
+            }
+        }
+
+        &__cardContent3{
+            position: relative;
+
+            &::before{
+                content: "";
+                background: url(/img/truck-icon.png) no-repeat;
+                width: 75px;
+                height: 75px;
+                position: absolute;
+                top: 50px;
+                left: 140px;
+            }
+        }
+    }
+}

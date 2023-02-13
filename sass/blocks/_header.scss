@@ -1,0 +1,34 @@
+.header{
+    background: url(/img/main-pic.jpg) no-repeat;
+    background-size: 100% 100%;
+    color: white;
+    padding: 70px 50px;
+    border-radius: 10px;
+    
+    &__block{
+        width: 500px;
+
+        &__title{
+            font-size: 72px;
+            font-family: fraunces;
+            margin-top: 0;
+        }
+
+        &__description{
+            width: 450px;
+            line-height: 25px
+        }
+
+        &__btn{
+            @include commonBtn();
+
+            &:hover{
+                background-color: #66D2CF;
+            }
+
+            &:active{
+                background-color: #E2DEDB;
+            }
+        }
+    }
+}
