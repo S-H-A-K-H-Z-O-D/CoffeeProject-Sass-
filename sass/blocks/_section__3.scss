@@ -76,3 +76,72 @@
         }
     }
 }
+
+@media only screen and (max-width: 781px){
+
+    .section3{
+        margin: 70px 0;
+        padding-top: 0px;
+    
+        & >h3{
+            color: #83888F;
+            font-family: fraunces;
+        }
+    
+        &__cards{
+    
+            &__card1{
+                padding-right: 40px;
+    
+                & >h3{
+                    font-size: 25px;
+                    width: 150px;
+                }
+            }
+    
+            &__card2{
+                padding-right: 40px;
+    
+                & >h3{
+                    font-size: 25px;
+                }
+            }
+    
+            &__Pelement{
+                position: relative;
+                padding-top: 30px;
+    
+                &::after{
+                    content: "";
+                    width: 35px;
+                    height: 35px;
+                    background: url("../img/Oval.png") no-repeat;
+                    position: absolute;
+                    top: -15px;
+                }
+    
+                &__text{
+                    line-height: 25px;
+                    color: #333D4B;
+                }
+
+                & >h3{
+                    font-size: 25px;
+                }
+            }
+        }
+    
+        &__btn{
+            @include commonBtn();
+            border: none;
+    
+            &:hover{
+                background-color: #66D2CF;
+            }
+    
+            &:active{
+                background-color: #E2DEDB;
+            }
+        }
+    }
+}

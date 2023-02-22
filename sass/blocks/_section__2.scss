@@ -78,3 +78,101 @@
         }
     }
 }
+
+@media only screen and (max-width: 781px){
+
+    .section2{
+        position: relative;
+        text-align: center;
+        background-color: #2C343E;
+        margin-bottom: 67vh;
+        padding-bottom: 370px;
+        border-radius: 10px;
+        margin-top: 100px;
+    
+        & >h2{
+            color: white;
+            padding-top: 70px;
+        }
+    
+        & >p{
+            color: white;
+            padding: 15px 50px;
+            line-height: 25px;
+        }
+    
+        &__cards{
+            width: 100%;
+            display: flex;
+            flex-direction: column;
+            align-items: center;
+            justify-content: center;
+            position: absolute;
+            bottom: -50vh;
+            
+            left: auto;
+    
+            &__card{
+                text-align: start;
+                background-color: #0E8784;
+                width: 320px;
+                margin: 0 15px;
+                padding: 30px 30px;
+                border-radius: 5px;
+                color: white;
+                padding-top: 50px;
+                padding-left: 180px;
+                margin-top: 20px;
+
+                & >p{
+                    line-height: 25px;
+                }
+            }
+    
+            &__cardContent1{
+                position: relative;
+    
+                &::before{
+                    content: "";
+                    background: url(/img/coffee-bean.png) no-repeat;
+                    background-size: 100% 100%;
+                    width: 60px;
+                    height: 60px;
+                    position: absolute;
+                    top: 80px;
+                    left: 70px;
+                }
+            }
+    
+            &__cardContent2{
+                position: relative;
+    
+                &::before{
+                    content: "";
+                    background: url(/img/present-box.png) no-repeat;
+                    background-size: 100% 100%;
+                    width: 60px;
+                    height: 60px;
+                    position: absolute;
+                    top: 80px;
+                    left: 70px;
+                }
+            }
+    
+            &__cardContent3{
+                position: relative;
+    
+                &::before{
+                    content: "";
+                    background: url(/img/truck-icon.png) no-repeat;
+                    background-size: 100% 100%;
+                    width: 60px;
+                    height: 60px;
+                    position: absolute;
+                    top: 80px;
+                    left: 70px;
+                }
+            }
+        }
+    }
+}

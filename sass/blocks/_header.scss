@@ -32,3 +32,19 @@
         }
     }
 }
+
+
+@media only screen and (max-width: 781px) {
+    
+    .header{
+        padding: 70px 50px;
+
+        &__block{
+    
+            &__title{
+                font-size: 52px;
+                padding-right: 50px;
+            }
+        }
+    }
+}
