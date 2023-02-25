@@ -80,12 +80,10 @@
 @media only screen and (max-width: 781px){
 
     .section3{
-        margin: 70px 0;
         padding-top: 0px;
     
         & >h3{
-            color: #83888F;
-            font-family: fraunces;
+            
         }
     
         &__cards{
@@ -108,40 +106,78 @@
             }
     
             &__Pelement{
-                position: relative;
-                padding-top: 30px;
-    
+                
                 &::after{
-                    content: "";
-                    width: 35px;
-                    height: 35px;
-                    background: url("../img/Oval.png") no-repeat;
-                    position: absolute;
-                    top: -15px;
+                    
                 }
-    
-                &__text{
-                    line-height: 25px;
-                    color: #333D4B;
-                }
-
                 & >h3{
                     font-size: 25px;
                 }
             }
         }
+    }
+}
+
+
+@media only screen and (max-width: 481px){
+
+    .section3{
+        padding-top: 0px;
+        display: flex;
+        flex-direction: column;
+        align-items: center;
     
+        & >h3{
+            padding: 0;
+            margin: 0;
+        }
+    
+        &__cards{
+            display: flex;
+            flex-direction: column;
+            align-items: center;
+            padding: 0 40px;
+            margin-top: 0px;
+    
+            &__card1{
+                padding-right: 0px;
+                border-top: none;
+                text-align: center;
+                    
+                & >h3{
+                    text-align: center;
+                    font-size: 25px;
+                    width: fit-content;
+                    display: inline-block;
+                }
+            }
+    
+            &__card2{
+                padding-right: 0px;
+                text-align: center;
+    
+                & >h3{
+                    font-size: 25px;
+                    width: fit-content;
+                    display: inline-block;
+                    text-align: center;
+                }
+            }
+    
+            &__Pelement{
+                
+                &::after{
+                    display: none;
+                    
+                }
+                & >h3{
+                    font-size: 25px;
+                }
+            }
+        }
+
         &__btn{
-            @include commonBtn();
-            border: none;
-    
-            &:hover{
-                background-color: #66D2CF;
-            }
-    
-            &:active{
-                background-color: #E2DEDB;
-            }
+            display: inline-block;
         }
     }
 }

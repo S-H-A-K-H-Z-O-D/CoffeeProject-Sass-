@@ -36,12 +36,43 @@
         position: relative;
     
         &__underWord{
+            left: 20px;
             font-size: 85px;
         }
     
         &__card{
             display: flex;
             padding: 0 30px;
+            text-align: center;
+            line-height: 25px;
+            color: #333D4B;
+    
+            &__title{
+                & >h3{
+                    font-family: fraunces;
+                }
+            }
+        }
+    }
+}
+
+@media only screen and (max-width: 481px){
+
+    .cards{
+        display: flex;
+        flex-direction: column;
+        align-items: center;
+        margin-top: 200px;
+        position: relative;
+    
+        &__underWord{
+            font-size: 45px;
+        }
+    
+        &__card{
+            display: flex;
+            flex-direction: column;
+            padding: 0 50px;
             text-align: center;
             line-height: 25px;
             color: #333D4B;
