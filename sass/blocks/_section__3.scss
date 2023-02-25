@@ -76,3 +76,108 @@
         }
     }
 }
+
+@media only screen and (max-width: 781px){
+
+    .section3{
+        padding-top: 0px;
+    
+        & >h3{
+            
+        }
+    
+        &__cards{
+    
+            &__card1{
+                padding-right: 40px;
+    
+                & >h3{
+                    font-size: 25px;
+                    width: 150px;
+                }
+            }
+    
+            &__card2{
+                padding-right: 40px;
+    
+                & >h3{
+                    font-size: 25px;
+                }
+            }
+    
+            &__Pelement{
+                
+                &::after{
+                    
+                }
+                & >h3{
+                    font-size: 25px;
+                }
+            }
+        }
+    }
+}
+
+
+@media only screen and (max-width: 481px){
+
+    .section3{
+        padding-top: 0px;
+        display: flex;
+        flex-direction: column;
+        align-items: center;
+    
+        & >h3{
+            padding: 0;
+            margin: 0;
+        }
+    
+        &__cards{
+            display: flex;
+            flex-direction: column;
+            align-items: center;
+            padding: 0 40px;
+            margin-top: 0px;
+    
+            &__card1{
+                padding-right: 0px;
+                border-top: none;
+                text-align: center;
+                    
+                & >h3{
+                    text-align: center;
+                    font-size: 25px;
+                    width: fit-content;
+                    display: inline-block;
+                }
+            }
+    
+            &__card2{
+                padding-right: 0px;
+                text-align: center;
+    
+                & >h3{
+                    font-size: 25px;
+                    width: fit-content;
+                    display: inline-block;
+                    text-align: center;
+                }
+            }
+    
+            &__Pelement{
+                
+                &::after{
+                    display: none;
+                    
+                }
+                & >h3{
+                    font-size: 25px;
+                }
+            }
+        }
+
+        &__btn{
+            display: inline-block;
+        }
+    }
+}

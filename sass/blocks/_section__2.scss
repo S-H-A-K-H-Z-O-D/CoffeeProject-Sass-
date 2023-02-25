@@ -41,6 +41,7 @@
             &::before{
                 content: "";
                 background: url(/img/coffee-bean.png) no-repeat;
+                background-size: 100% 100%;
                 width: 75px;
                 height: 75px;
                 position: absolute;
@@ -55,6 +56,7 @@
             &::before{
                 content: "";
                 background: url(/img/present-box.png) no-repeat;
+                background-size: 100% 100%;
                 width: 75px;
                 height: 75px;
                 position: absolute;
@@ -69,11 +71,156 @@
             &::before{
                 content: "";
                 background: url(/img/truck-icon.png) no-repeat;
+                background-size: 100% 100%;
                 width: 75px;
                 height: 75px;
                 position: absolute;
                 top: 50px;
                 left: 140px;
+            }
+        }
+    }
+}
+
+@media only screen and (max-width: 781px){
+
+    .section2{
+        
+        margin-bottom: 105vh;
+        padding-bottom: 60vh;
+    
+        & >h2{
+            
+        }
+    
+        & >p{
+            padding: 15px 50px;      
+        }
+    
+        &__cards{
+            width: 100%; 
+            flex-direction: column;
+            align-items: center;
+            justify-content: center;
+            bottom: -55vh;
+            left: auto;
+    
+            &__card{
+                text-align: start; 
+                width: 370px;
+                padding: 30px 15px;
+                padding-top: 50px;
+                padding-left: 180px;
+                margin-top: 50px;
+
+                & >p{
+                    line-height: 25px;
+                }
+            }
+    
+            &__cardContent1{
+                
+    
+                &::before{
+                    width: 60px;
+                    height: 60px;
+                    top: 80px;
+                    left: 70px;
+                }
+            }
+    
+            &__cardContent2{
+                position: relative;
+    
+                &::before{
+                    width: 60px;
+                    height: 60px;
+                    top: 80px;
+                    left: 70px;
+                }
+            }
+    
+            &__cardContent3{
+                position: relative;
+    
+                &::before{ 
+                    width: 60px;
+                    height: 50px; 
+                    top: 80px;
+                    left: 70px;
+                }
+            }
+        }
+    }
+}
+
+@media only screen and (max-width: 481px){
+
+    .section2{
+        
+        margin-bottom: 105vh;
+        padding-bottom: 92vh;
+    
+        & >h2{
+            
+        }
+    
+        & >p{
+            padding: 15px 50px;      
+        }
+    
+        &__cards{
+            width: 100%; 
+            flex-direction: column;
+            align-items: center;
+            justify-content: center;
+            bottom: -90vh;
+            left: auto;
+    
+            &__card{
+                text-align: center; 
+                width: 250px;
+                padding: 30px 15px;
+                padding-top: 170px;
+                padding-left: 18px;
+                margin-top: 50px;
+
+                & >p{
+                    line-height: 25px;
+                }
+            }
+    
+            &__cardContent1{
+                
+    
+                &::before{
+                    width: 60px;
+                    height: 60px;
+                    top: 70px;
+                    left: 110px;
+                }
+            }
+    
+            &__cardContent2{
+                position: relative;
+    
+                &::before{
+                    width: 60px;
+                    height: 60px;
+                    top: 70px;
+                    left: 110px;
+                }
+            }
+    
+            &__cardContent3{
+                position: relative;
+    
+                &::before{ 
+                    width: 60px;
+                    height: 50px; 
+                    top: 70px;
+                    left: 110px;
+                }
             }
         }
     }

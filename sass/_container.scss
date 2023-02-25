@@ -1,0 +1,22 @@
+body{
+    box-sizing: border-box;
+    font-family: barlow-400;
+}
+
+.container{
+    padding: 0 130px;
+}
+
+@media only screen and (max-width: 781px){
+
+    .container{
+        padding: 0 40px;
+    }
+}
+
+@media only screen and (max-width: 481px){
+
+    .container{
+        padding: 0 24px;
+    }
+}
